@@ -1,6 +1,6 @@
 # Jewelry-Price-Prediction
 
-We have developed this model to accurately predict jewelry prices with a remarkable 80% level of accuracy. This groundbreaking model serves as an invaluable tool for website owners, empowering them to establish optimal price points for their potential products. Moreover, it provides customers with valuable insights into the pricing of customized jewelry pieces, allowing them to make informed decisions.
+We have developed this model to accurately predict jewelry prices with a remarkable 80% level of accuracy. This model serves as an invaluable tool for website owners, empowering them to establish optimal price points for their potential products. Moreover, it provides customers with valuable insights into the pricing of customized jewelry pieces, allowing them to make informed decisions.
 
 <H1>Project Overview:</H1>
 <ol>
