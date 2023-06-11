@@ -27,7 +27,48 @@ plots as visulization tools.
 the mean. Prices in range [1700,7000] are considered outliers and were removed.
 
 <h3><u>Feature Selection : </u></h3>
+Is the process of reducing the number of input variables when developing a predictive model. 
+It is desirable to reduce the number of input variables to, in our casee, improve the 
+performance of the model.
+<br>
+<h4> First Approach: Univariate analysis : CHI2 TEST: </h4>
+We performed the Chi2 test to know which features are significant.
+<ul>
+  <li>Assign ‘’Fail to reject’’ to features with no significance </li>
+  <li>Assign ‘’Reject null hypthesis’’ to features with significance </li>
+  
+</ul>
+<br> Results showed that all features are significant.
 
+<h4> Second Approach: Testing correlation between features: </h4>
+<br>We used LabelEncoder from sklearn.preprocessing to transform categorical 
+values into float values.
+<br> We used sns.heatmap to visualize the correlation between features. 
+We removed features that have correlation more than 0.9.
 
+<h4> Performing the Backward elimination: </h4>
+In backward elimination, we start with the full model (including all the independent 
+variables) and then remove the insignificant feature with the highest p-value(> significance 
+level). This process repeats again and again until we have the final set of significant features.
+
+<ol>
+  <li>Choose a significance level (e.g. SL = 0.05 with a 95% confidence).</li>
+  <li>Fit a full model including all the features.</li>
+  <li>Consider the feature with the highest p-value. If the p-value > significance level then 
+  go to Step 4, otherwise terminate the process.</li>
+  <li> Remove the feature which is under consideration.</li>
+  <li>Fit a model without this feature. Repeat the entire process from Step 3.</li>
+</ol>
+
+<H1>Building Models: </H1>
+
+<H4>Random Forest: </H4>
+Random Forest is a powerful supervised learning algorithm that enhances predictive capabilities by utilizing the concept of ensemble learning. It achieves this by constructing a multitude of decision trees, referred to as estimators. The parameter "n_estimator" represents the number of trees to be built before aggregating the predictions through techniques such as maximum voting or averaging. In our specific case, we have opted for a value of 100 for n_estimator.
+<br>
+The rationale behind selecting the Random Forest algorithm stems from its versatility and numerous advantages. Notably, Random Forest exhibits robustness across a wide range of applications and data scenarios. Moreover, it provides valuable insights into feature importance, which aids in comprehending the relative significance of various input variables in predicting the target variable. This information can be leveraged to gain deeper insights into the underlying relationships within the dataset and inform subsequent decision-making processes.
+
+<H1>Model Performance: </H1>
+
+<img src="Comparision.PNG">
 
 
