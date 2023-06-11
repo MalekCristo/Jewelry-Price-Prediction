@@ -4,7 +4,7 @@ We have developed this model to accurately predict jewelry prices with a remarka
 
 <H1>Project Overview:</H1>
 <ol>
-  <li>Scraped welry.com for 780 jewelery Products. </li>
+  <li>Scraped 780 jewelery Products. </li>
   <li>Cleaned and Preprocessed Data. </li>
   <li>EDA. </li>
   <li>Feature Selection. </li>
